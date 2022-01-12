@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Search } from "@material-ui/icons"
+import { Search, ShoppingCartOutlined } from "@material-ui/icons"
+import { Badge } from '@material-ui/core'
+
 
 const Container = styled.div`
   height: 60px;
+
 `
 
 const Wrapper = styled.div`
@@ -11,6 +14,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: lightgray;
 
 `
 
@@ -18,8 +22,12 @@ const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+
   
-  
+`
+
+const Logo = styled.h1`
+  font-weight: bold;
 `
 
 const Language = styled.span`
@@ -28,20 +36,36 @@ const Language = styled.span`
 `
 
 const SearchContainer = styled.div`
-  border: 1px solid lightgray;
+  
   display: flex;
   align-items: center;
+  margin-left: 30px;
+  padding: 5px;
+  
+`
+
+const Input = styled.input`
   
 `
 
 const Center = styled.div`
   flex: 1;
+  text-align: center;
   
 `
 
 const Right = styled.div`
-  flex:1;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
+`
+
+const MenuItem = styled.div`
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 25px;
 `
 
 const Navbar = () => {
@@ -52,11 +76,21 @@ const Navbar = () => {
                     <Language>EN</Language>
                     <SearchContainer>
                         <Search/>
-                        Search</SearchContainer>
-
+                        <Input/>
+                    </SearchContainer>
                 </Left>
-                <Center>Center</Center>
-                <Right>Right</Right>
+                <Center>
+                  <Logo>RE.Commerce.</Logo>
+                </Center>
+                <Right>
+                  <MenuItem>Register</MenuItem>
+                  <MenuItem>Sign In</MenuItem>
+                  <MenuItem>
+                    <Badge badgeContent={4} color="primary">
+                      <ShoppingCartOutlined/>
+                    </Badge>
+                    </MenuItem>
+                </Right>
 
             </Wrapper>
         </Container>
