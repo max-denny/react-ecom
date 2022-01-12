@@ -6,6 +6,8 @@ import { Badge } from '@material-ui/core'
 
 const Container = styled.div`
   height: 60px;
+  margin-bottom: 40px;
+  color: #DDDDDD
 
 `
 
@@ -14,7 +16,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: lightgray;
+  background-color: #726A95;
 
 `
 
@@ -91,7 +93,6 @@ const Navbar = () => {
                     </Badge>
                     </MenuItem>
                 </Right>
-
             </Wrapper>
         </Container>
     )
