@@ -6,25 +6,26 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons"
 const Container = styled.div`
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   display: flex;
-  background-color: #A0C1B8;
+  background-color: #B9D2D2;
   color : white;
   position: relative;
+  opacity: 0.95;
 `
 
 const Arrow = styled.div`
- height: 50px;
- width: 50px;
+ height: 70px;
+ width: 70px;
  display:flex;
  align-items: center;
  justify-content: center;
  background-color: ghostwhite;
- color: red;
+ color: darkorchid;
  border-radius: 50%;
  position: absolute; 
  left: ${props => props.direction === "left" && "10px"};
- right: ${props => props.direction === "right" && "25px"};
+ right: ${props => props.direction === "right" && "45px"};
  cursor: pointer;
  opacity: 0.5;  
 `
@@ -47,66 +48,77 @@ const ImageContainer = styled.div`
   width: 80%;
   flex: 1;
   align-items: center;
+  padding: 10px;
 
 `
 
 const Image = styled.img`
 
   width: 80vw;
-  max-height: inherit;
+  height: 120%;
   align-items: center;
-  margin-left: 25%;
+  justify-content: center;
+  margin-left: 20%;
   object-fit: cover;
   border-radius: 1.5%;
+  margin-top: -6%;
   
 `
 
 const InfoContainer = styled.div`
   
-  background-color: papayawhip;
-  height: 30vh;
-  margin-left: -360px;
-  margin-top: 45vh;
-  width: 25vh;
-  color: purple;
+  background-color: aliceblue;
+  height: 25vh;
+  margin-left: -335px;
+  margin-top: 40vh;
+  width: 33vw;
+  color: teal;
+  font-weight: bold;
   border-radius: 2.5%;
-  opacity: .75;
-  width: inherit;
+  opacity: .9;
+//   width: inherit;
   
 `
 
 const Title = styled.h1`
+  margin-left: 10px;
   
 `
 
 const Description = styled.p`
+  margin-left: 10px;
   
 `
-
 const Button = styled.button`
+  margin-left: 10px;
+  padding: 10px 10px;
+  font-size: 15px;
+  background-color: transparent;
+  cursor: pointer;
   
 `
 
 const Slider = () => {
     return (
+       
         <Container>
             <Arrow direction= "left">
-                <ArrowLeftOutlined/>
+                <ArrowLeftOutlined fontSize="large" />
                 </Arrow>
                 <Wrapper>
                     <Slide>
                   <ImageContainer>
-                      <Image src= "https://damassets.autodesk.net/content/dam/autodesk/www/solutions/cad-software/what-is-cad-software-thumb-1006x484.jpg"/>
+                      <Image src= "https://pngimg.com/uploads/house/house_PNG68.png"/>
                   </ImageContainer>
                   <InfoContainer>
                       <Title>Eco House Design</Title>
                       <Description>Maximize efficiency and luxury with this design</Description>
                       <Button>Get Design</Button>
                   </InfoContainer>
-                  </Slide>
+                  </Slide>  
                 </Wrapper>
                 <Arrow direction= "right">
-                <ArrowRightOutlined/>
+                <ArrowRightOutlined fontSize="large"/>
                 </Arrow>
         </Container>
 

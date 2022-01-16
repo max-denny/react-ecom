@@ -5,14 +5,14 @@ import { Badge } from '@material-ui/core'
 
 
 const Container = styled.div`
-  height: 60px;
-  margin-bottom: 40px;
-  color: #DDDDDD
+  height: 55px;
+  margin-bottom: 35px;
+  color: #DDDDDD;
 
 `
 
 const Wrapper = styled.div`
-  padding: 10px 20px;
+  padding: 10px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,6 +53,7 @@ const Input = styled.input`
 const Center = styled.div`
   flex: 1;
   text-align: center;
+  margin-top: -5px;
   
 `
 
@@ -82,7 +83,7 @@ const Navbar = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
-                  <Logo>RE.Commerce.</Logo>
+                  <Logo>ARC.Commerce.</Logo>
                 </Center>
                 <Right>
                   <MenuItem>Register</MenuItem>
