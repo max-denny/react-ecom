@@ -37,8 +37,9 @@ const Wrapper = styled.div`
 
 const Slide = styled.div`
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   display: flex;
+  align-items: center;
 
   
 `
@@ -55,10 +56,10 @@ const ImageContainer = styled.div`
 const Image = styled.img`
 
   width: 80vw;
-  height: 120%;
+  height: 110%;
   align-items: center;
   justify-content: center;
-  margin-left: 20%;
+  margin-left: 9%;
   object-fit: cover;
   border-radius: 1.5%;
   margin-top: -6%;
@@ -67,15 +68,20 @@ const Image = styled.img`
 
 const InfoContainer = styled.div`
   
-  background-color: aliceblue;
-  height: 25vh;
-  margin-left: -335px;
-  margin-top: 40vh;
-  width: 33vw;
-  color: teal;
+     flex: 1;
+     left: 20px;
+     margin-left: -1000px;
+//   background-color: aliceblue;
+//   height: 25vh;
+//   margin-left: -1000px;
+//   margin-top: 40vh;
+//   width: 33vw;
+  color: smokewhite;
+  -webkit-text-stroke: 1.0px black;
   font-weight: bold;
-  border-radius: 2.5%;
-  opacity: .9;
+  font-size: 22px;
+//   border-radius: 2.5%;
+  opacity: 2;
 //   width: inherit;
   
 `
